@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D00429711B35658E00D7C599 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00429701B35658E00D7C599 /* AppDelegate.swift */; };
+		D00429731B35658E00D7C599 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00429721B35658E00D7C599 /* ViewController.swift */; };
+		D00429781B35658E00D7C599 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00429771B35658E00D7C599 /* Images.xcassets */; };
+		D004297B1B35658E00D7C599 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D00429791B35658E00D7C599 /* LaunchScreen.xib */; };
+		D00429871B35658E00D7C599 /* VNC_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00429861B35658E00D7C599 /* VNC_ClientTests.swift */; };
+		D00429951B357AE100D7C599 /* ServerConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00429941B357AE100D7C599 /* ServerConnector.swift */; };
+		D05FB8DC1B370A2E000BEAA3 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FB8DB1B370A2E000BEAA3 /* Authenticator.swift */; };
+		D05FB8DE1B380489000BEAA3 /* NotificationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FB8DD1B380489000BEAA3 /* NotificationKeys.swift */; };
+		D05FB8E51B38200B000BEAA3 /* DESEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D05FB8E41B38200B000BEAA3 /* DESEncryptor.m */; };
+		D05FB8E81B395CE0000BEAA3 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FB8E71B395CE0000BEAA3 /* StreamReader.swift */; };
+		D05FB8F21B39E67D000BEAA3 /* FrameBufferProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FB8F11B39E67D000BEAA3 /* FrameBufferProcessor.swift */; };
+		D05FB8F61B3BF816000BEAA3 /* PixelRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FB8F51B3BF816000BEAA3 /* PixelRectangle.swift */; };
+		D05FB8F81B3D6D5A000BEAA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05FB8F71B3D6D59000BEAA3 /* Main.storyboard */; };
+		D05FB8FA1B3DBADB000BEAA3 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FB8F91B3DBADB000BEAA3 /* ImageProcessor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D00429811B35658E00D7C599 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D00429631B35658E00D7C599 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D004296A1B35658E00D7C599;
+			remoteInfo = "VNC Client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D004296B1B35658E00D7C599 /* VNC Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VNC Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D004296F1B35658E00D7C599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D00429701B35658E00D7C599 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D00429721B35658E00D7C599 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D00429771B35658E00D7C599 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D004297A1B35658E00D7C599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D00429801B35658E00D7C599 /* VNC ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VNC ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00429851B35658E00D7C599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D00429861B35658E00D7C599 /* VNC_ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNC_ClientTests.swift; sourceTree = "<group>"; };
+		D00429941B357AE100D7C599 /* ServerConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConnector.swift; sourceTree = "<group>"; };
+		D05FB8DB1B370A2E000BEAA3 /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		D05FB8DD1B380489000BEAA3 /* NotificationKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationKeys.swift; sourceTree = "<group>"; };
+		D05FB8E31B38200B000BEAA3 /* VNC Client-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VNC Client-Bridging-Header.h"; sourceTree = "<group>"; };
+		D05FB8E41B38200B000BEAA3 /* DESEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DESEncryptor.m; sourceTree = "<group>"; };
+		D05FB8E61B383AE1000BEAA3 /* DESEncryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DESEncryptor.h; sourceTree = "<group>"; };
+		D05FB8E71B395CE0000BEAA3 /* StreamReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
+		D05FB8F11B39E67D000BEAA3 /* FrameBufferProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameBufferProcessor.swift; sourceTree = "<group>"; };
+		D05FB8F51B3BF816000BEAA3 /* PixelRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PixelRectangle.swift; path = ../PixelRectangle.swift; sourceTree = "<group>"; };
+		D05FB8F71B3D6D59000BEAA3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D05FB8F91B3DBADB000BEAA3 /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00429681B35658E00D7C599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D004297D1B35658E00D7C599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D00429621B35658E00D7C599 = {
+			isa = PBXGroup;
+			children = (
+				D004296D1B35658E00D7C599 /* VNC Client */,
+				D00429831B35658E00D7C599 /* VNC ClientTests */,
+				D004296C1B35658E00D7C599 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D004296C1B35658E00D7C599 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D004296B1B35658E00D7C599 /* VNC Client.app */,
+				D00429801B35658E00D7C599 /* VNC ClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D004296D1B35658E00D7C599 /* VNC Client */ = {
+			isa = PBXGroup;
+			children = (
+				D00429701B35658E00D7C599 /* AppDelegate.swift */,
+				D05FB8DD1B380489000BEAA3 /* NotificationKeys.swift */,
+				D05FB8F51B3BF816000BEAA3 /* PixelRectangle.swift */,
+				D00429941B357AE100D7C599 /* ServerConnector.swift */,
+				D05FB8F11B39E67D000BEAA3 /* FrameBufferProcessor.swift */,
+				D05FB8F91B3DBADB000BEAA3 /* ImageProcessor.swift */,
+				D05FB8DB1B370A2E000BEAA3 /* Authenticator.swift */,
+				D05FB8F71B3D6D59000BEAA3 /* Main.storyboard */,
+				D05FB8E71B395CE0000BEAA3 /* StreamReader.swift */,
+				D05FB8E41B38200B000BEAA3 /* DESEncryptor.m */,
+				D05FB8E61B383AE1000BEAA3 /* DESEncryptor.h */,
+				D00429721B35658E00D7C599 /* ViewController.swift */,
+				D00429771B35658E00D7C599 /* Images.xcassets */,
+				D00429791B35658E00D7C599 /* LaunchScreen.xib */,
+				D004296E1B35658E00D7C599 /* Supporting Files */,
+				D05FB8E31B38200B000BEAA3 /* VNC Client-Bridging-Header.h */,
+			);
+			path = "VNC Client";
+			sourceTree = "<group>";
+		};
+		D004296E1B35658E00D7C599 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D004296F1B35658E00D7C599 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D00429831B35658E00D7C599 /* VNC ClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				D00429861B35658E00D7C599 /* VNC_ClientTests.swift */,
+				D00429841B35658E00D7C599 /* Supporting Files */,
+			);
+			path = "VNC ClientTests";
+			sourceTree = "<group>";
+		};
+		D00429841B35658E00D7C599 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D00429851B35658E00D7C599 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D004296A1B35658E00D7C599 /* VNC Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D004298A1B35658E00D7C599 /* Build configuration list for PBXNativeTarget "VNC Client" */;
+			buildPhases = (
+				D00429671B35658E00D7C599 /* Sources */,
+				D00429681B35658E00D7C599 /* Frameworks */,
+				D00429691B35658E00D7C599 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VNC Client";
+			productName = "VNC Client";
+			productReference = D004296B1B35658E00D7C599 /* VNC Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D004297F1B35658E00D7C599 /* VNC ClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D004298D1B35658E00D7C599 /* Build configuration list for PBXNativeTarget "VNC ClientTests" */;
+			buildPhases = (
+				D004297C1B35658E00D7C599 /* Sources */,
+				D004297D1B35658E00D7C599 /* Frameworks */,
+				D004297E1B35658E00D7C599 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D00429821B35658E00D7C599 /* PBXTargetDependency */,
+			);
+			name = "VNC ClientTests";
+			productName = "VNC ClientTests";
+			productReference = D00429801B35658E00D7C599 /* VNC ClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D00429631B35658E00D7C599 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Alex Barron";
+				TargetAttributes = {
+					D004296A1B35658E00D7C599 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					D004297F1B35658E00D7C599 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = D004296A1B35658E00D7C599;
+					};
+				};
+			};
+			buildConfigurationList = D00429661B35658E00D7C599 /* Build configuration list for PBXProject "VNC Client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D00429621B35658E00D7C599;
+			productRefGroup = D004296C1B35658E00D7C599 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D004296A1B35658E00D7C599 /* VNC Client */,
+				D004297F1B35658E00D7C599 /* VNC ClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D00429691B35658E00D7C599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05FB8F81B3D6D5A000BEAA3 /* Main.storyboard in Resources */,
+				D004297B1B35658E00D7C599 /* LaunchScreen.xib in Resources */,
+				D00429781B35658E00D7C599 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D004297E1B35658E00D7C599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00429671B35658E00D7C599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00429731B35658E00D7C599 /* ViewController.swift in Sources */,
+				D05FB8DE1B380489000BEAA3 /* NotificationKeys.swift in Sources */,
+				D05FB8FA1B3DBADB000BEAA3 /* ImageProcessor.swift in Sources */,
+				D05FB8F21B39E67D000BEAA3 /* FrameBufferProcessor.swift in Sources */,
+				D05FB8E51B38200B000BEAA3 /* DESEncryptor.m in Sources */,
+				D05FB8F61B3BF816000BEAA3 /* PixelRectangle.swift in Sources */,
+				D05FB8E81B395CE0000BEAA3 /* StreamReader.swift in Sources */,
+				D05FB8DC1B370A2E000BEAA3 /* Authenticator.swift in Sources */,
+				D00429951B357AE100D7C599 /* ServerConnector.swift in Sources */,
+				D00429711B35658E00D7C599 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D004297C1B35658E00D7C599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00429871B35658E00D7C599 /* VNC_ClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D00429821B35658E00D7C599 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D004296A1B35658E00D7C599 /* VNC Client */;
+			targetProxy = D00429811B35658E00D7C599 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D00429791B35658E00D7C599 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D004297A1B35658E00D7C599 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D00429881B35658E00D7C599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D00429891B35658E00D7C599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D004298B1B35658E00D7C599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "VNC Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VNC Client/VNC Client-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D004298C1B35658E00D7C599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "VNC Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VNC Client/VNC Client-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		D004298E1B35658E00D7C599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VNC ClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VNC Client.app/VNC Client";
+			};
+			name = Debug;
+		};
+		D004298F1B35658E00D7C599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VNC ClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VNC Client.app/VNC Client";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D00429661B35658E00D7C599 /* Build configuration list for PBXProject "VNC Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00429881B35658E00D7C599 /* Debug */,
+				D00429891B35658E00D7C599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D004298A1B35658E00D7C599 /* Build configuration list for PBXNativeTarget "VNC Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D004298B1B35658E00D7C599 /* Debug */,
+				D004298C1B35658E00D7C599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D004298D1B35658E00D7C599 /* Build configuration list for PBXNativeTarget "VNC ClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D004298E1B35658E00D7C599 /* Debug */,
+				D004298F1B35658E00D7C599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D00429631B35658E00D7C599 /* Project object */;
+}

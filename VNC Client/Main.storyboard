@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VNC_Client" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0I-g3-Uww">
+                                <rect key="frame" x="265" y="104" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="cIb-zM-DRy"/>
+                                </constraints>
+                                <state key="normal" title="Connect">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectToServer" destination="BYZ-38-t0r" eventType="touchUpInside" id="mjg-yP-1pU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.0.5" borderStyle="roundedRect" placeholder="Server IP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gto-he-2Gk">
+                                <rect key="frame" x="208" y="28" width="184" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="Kgx-Gz-ueE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="glebe" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDr-Iu-eWZ">
+                                <rect key="frame" x="208" y="66" width="184" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zl0-bU-0wu">
+                                <rect key="frame" x="16" y="142" width="568" height="438"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acO-JW-1Qg">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="438"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gto-he-2Gk" firstAttribute="leading" secondItem="kDr-Iu-eWZ" secondAttribute="leading" id="101-qN-rmZ"/>
+                            <constraint firstItem="Gto-he-2Gk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Zj-sj-xIX"/>
+                            <constraint firstItem="Zl0-bU-0wu" firstAttribute="centerX" secondItem="C0I-g3-Uww" secondAttribute="centerX" id="Do8-07-qSr"/>
+                            <constraint firstItem="kDr-Iu-eWZ" firstAttribute="trailing" secondItem="Gto-he-2Gk" secondAttribute="trailing" id="FJm-d5-cED"/>
+                            <constraint firstItem="Zl0-bU-0wu" firstAttribute="top" secondItem="C0I-g3-Uww" secondAttribute="bottom" constant="8" symbolic="YES" id="Y0Y-8b-gLM"/>
+                            <constraint firstItem="kDr-Iu-eWZ" firstAttribute="top" secondItem="Gto-he-2Gk" secondAttribute="bottom" constant="8" symbolic="YES" id="aGB-Uv-qUH"/>
+                            <constraint firstItem="Zl0-bU-0wu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bhE-cI-9ig"/>
+                            <constraint firstItem="kDr-Iu-eWZ" firstAttribute="centerX" secondItem="C0I-g3-Uww" secondAttribute="centerX" id="e9R-vi-gOo"/>
+                            <constraint firstItem="Gto-he-2Gk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="orz-2H-xSp"/>
+                            <constraint firstItem="C0I-g3-Uww" firstAttribute="top" secondItem="kDr-Iu-eWZ" secondAttribute="bottom" constant="8" symbolic="YES" id="qJ3-Uj-WRB"/>
+                            <constraint firstAttribute="bottom" secondItem="Zl0-bU-0wu" secondAttribute="bottom" constant="20" symbolic="YES" id="si7-Cc-0mD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="connectButton" destination="C0I-g3-Uww" id="vR8-S4-5Gy"/>
+                        <outlet property="desktopView" destination="acO-JW-1Qg" id="5je-cc-ri2"/>
+                        <outlet property="hostField" destination="Gto-he-2Gk" id="5Jb-U0-fpb"/>
+                        <outlet property="passField" destination="kDr-Iu-eWZ" id="qrr-0h-WV4"/>
+                        <outlet property="scrollView" destination="Zl0-bU-0wu" id="e8r-4C-3ZC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="548" y="360"/>
+        </scene>
+    </scenes>
+</document>
